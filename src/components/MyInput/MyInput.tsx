@@ -8,6 +8,10 @@ const InputWrapper = styled.div`
     width: 100%;
     text-align: left;
   }
+  img {
+    position: absolute;
+    left: 16px;
+  }
   h6 {
     color: #151515;
     font-size: 14px;
@@ -45,7 +49,7 @@ const MyInput: React.FC<any> = ({
   return (
     <InputWrapper>
       <h6>{title}</h6>
-      <input type={type ? type : "text"} placeholder={placeholder} />
+      <input type={type ? type : "text"} placeholder={placeholder} {...props} />
     </InputWrapper>
   );
 };

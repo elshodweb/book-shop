@@ -26,15 +26,11 @@ const SignInPage = () => {
         <MyInput title="Your name" placeholder={"Enter your name"} />
         <MyInput title="Your email" placeholder={"Enter your email"} />
         <MyInput title="Your username" placeholder={"Enter your username"} />
-        <MyInput
-          type="password"
-          title="Your password"
-          placeholder={"Enter your password"}
-        />
 
         <MyButton />
+
         <FormBottom>
-          Already signed up? <Link to="/signup">Go to sign up.</Link>
+          Already signed up? <Link to="/signin">Go to sign in.</Link>
         </FormBottom>
       </FormStyle>
     </SignWap>
