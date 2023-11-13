@@ -3,7 +3,11 @@ import styled from "styled-components";
 import MyInput from "../MyInput/MyInput";
 import { Button } from "@mui/material";
 
-const ModalWrapper = styled.div<{ openModal: boolean }>`
+interface IStyle {
+  openModal: boolean;
+}
+
+const ModalWrapper = styled.div<IStyle>`
   position: fixed;
   left: 0;
   top: 0;

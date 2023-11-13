@@ -18,7 +18,7 @@ const Row = styled.div`
 `;
 
 const BooksList: React.FC<IBooksProps> = ({ books }) => {
-  return <Row>{books.length && books.map((book) => <Book data={book} />)}</Row>;
+  return <Row>{books.length && books.map((book) => <Book key={book.id} data={book} />)}</Row>;
 };
 
 export default BooksList;

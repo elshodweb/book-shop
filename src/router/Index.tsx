@@ -14,11 +14,11 @@ const RouterPage = () => {
       .get("/myself", {
         headers,
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {console.log(err)});
 
     return res?.data;
   }
-  console.log(isAuth());
+  
 
   // api`da signUp`dan boshqasi ishlamayapti
   // dozumentatsiyadagi kabi va boshqa usularda ham qilib ko'rdim

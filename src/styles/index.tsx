@@ -6,6 +6,7 @@ export const AppWrapper = styled.div`
   background: url("assets/img/bg-svg.svg");
   background-repeat: no-repeat;
   background-position: left top;
+  background-attachment: fixed;
   background-size: auto 135%;
   padding: 20px;
 `;

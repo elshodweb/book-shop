@@ -26,7 +26,7 @@ const SignUpPage: React.FC = () => {
   async function signUp() {
     const res = await axiosInstance
       .post("/signup", userData)
-      .catch((err) => console.log(err));
+      .catch((err) => {console.log(err)});
       
 
     if (res?.status === 200) {
@@ -43,12 +43,12 @@ const SignUpPage: React.FC = () => {
         <SocialBtn
           variant="google"
           value={"asdasd"}
-          onClick={() => console.log(123132)}
+          onClick={() => {}}
         />
         <SocialBtn
           variant="facebook"
           value={"asdasd"}
-          onClick={() => console.log(123132)}
+          onClick={() => {}}
         />
         <Or />
 

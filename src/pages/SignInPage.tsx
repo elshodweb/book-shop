@@ -11,16 +11,8 @@ const SignInPage = () => {
     <SignWap>
       <FormStyle>
         <H1>Sign in</H1>
-        <SocialBtn
-          variant="google"
-          value={"asdasd"}
-          onClick={() => console.log(123132)}
-        />
-        <SocialBtn
-          variant="facebook"
-          value={"asdasd"}
-          onClick={() => console.log(123132)}
-        />
+        <SocialBtn variant="google" value={"asdasd"} onClick={() => {}} />
+        <SocialBtn variant="facebook" value={"asdasd"} onClick={() => {}} />
         <Or />
 
         <MyInput title="Your name" placeholder={"Enter your name"} />
