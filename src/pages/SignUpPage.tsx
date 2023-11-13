@@ -88,7 +88,7 @@ const SignUpPage: React.FC = () => {
 
         <MyButton onClick={signUp} />
         <FormBottom>
-          Already signed up? <Link to="/signup">Go to sign in.</Link>
+          Already signed up? <Link to="/signin">Go to sign in.</Link>
         </FormBottom>
       </FormStyle>
     </SignWap>

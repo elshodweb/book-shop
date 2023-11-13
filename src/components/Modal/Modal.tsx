@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import MyInput from "../MyInput/MyInput";
 import { Button } from "@mui/material";
 
 interface IStyle {
-  openModal: boolean;
+  $openmodal: boolean;
 }
 
 const ModalWrapper = styled.div<IStyle>`
@@ -18,8 +18,8 @@ const ModalWrapper = styled.div<IStyle>`
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: ${(props) => (props.openModal ? 1 : 0)};
-  visibility: ${(props) => (props.openModal ? "visible" : "hidden")};
+  opacity: ${(props) => (props.$openmodal ? 1 : 0)};
+  visibility: ${(props) => (props.$openmodal ? "visible" : "hidden")};
   .content {
     position: relative;
     width: 100%;
@@ -78,7 +78,7 @@ interface IModalProps {
 
 const Modal: React.FC<IModalProps> = ({ openModal, setOpenModal }) => {
   return (
-    <ModalWrapper openModal={openModal}>
+    <ModalWrapper $openmodal={openModal}>
       <div className="content">
         <button onClick={() => setOpenModal(false)} className="btn close">
           <img src="assets/img/x-circle.svg" alt="cross" />

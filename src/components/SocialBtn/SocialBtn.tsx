@@ -22,13 +22,13 @@ const Button = styled.button<SocialBtnProps>`
     width: 24px;
     height: 24px;
     display: block;
-    background: url(assets/img/${(p) => p.variant}.svg) center no-repeat;
+    background: url(assets/img/${(p) => p.$variant}.svg) center no-repeat;
     background-size: cover;
   }
 `;
 
 interface SocialBtnProps {
-  variant?: string;
+  $variant?: string;
 }
 
 interface SocialBtnPropsComponent {
@@ -43,7 +43,7 @@ const SocialBtn: React.FC<SocialBtnPropsComponent> = ({
   onClick,
 }) => {
   return (
-    <Button onClick={onClick} value={value} variant={variant}>
+    <Button onClick={onClick} value={value} $variant={variant}>
       {variant === "facebook" ? "Continue with Google" : "Continue with Google"}
     </Button>
   );
